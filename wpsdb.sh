@@ -11,7 +11,7 @@
 #                  @mark__os  -  ciberentropia.blogspot.com.es
 # ----------------------------------------------------------------------------------
 
-# Funcion para comprobar los pines WPS contra la api de wpsdb
+# Funcion para comprobar los PIN's WPS contra la api de wpsdb
 api_connect() {
 STREAM=$(wget -q -O- "http://wpsdb.site40.net/api.php?TIPE=MAC&BSSID="$BSSID"" | grep "<tr>" | tail -n1 | sed 's/[^0-9!X]*//g')
 STREAM_COMA=`echo "$STREAM" | sed 's/\(.\)/\1,/g'`
