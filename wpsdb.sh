@@ -5,7 +5,7 @@
 #
 # USO: chmod +x wpsdb.sh
 #      ./wpsdb.sh AABBCC
-#      *Donde AABBCC corresponde a los datos de un BSSID tipo: AA:BB:CC:DD:EE:FF
+#      **Donde AABBCC corresponde a los datos de un BSSID tipo: AA:BB:CC:DD:EE:FF
 #
 # ----------------------------------------------------------------------------------
 #                  @mark__os  -  ciberentropia.blogspot.com.es
