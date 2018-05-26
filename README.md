@@ -1,7 +1,7 @@
 wpsdb_api
 =========
 
-Connect to wpsdb.site40.net api to retrieve WPS PIN's
+Connect to wpsdb.arg-wireless.com.ar api to retrieve WPS PIN's
 
 
 
