@@ -13,7 +13,7 @@
 
 # Funcion para comprobar los PIN's WPS contra la api de wpsdb
 api_connect() {
-STREAM=$(wget -q -O- "http://wpsdb.site40.net/api.php?TIPE=MAC&BSSID="$BSSID"" | grep "<tr>" | tail -n1 | sed 's/[^0-9!X]*//g')
+STREAM=$(wget -q -O- "http://wpsdb.arg-wireless.com.ar/api.php?TIPE=MAC&BSSID="$BSSID"" | grep "<tr>" | tail -n1 | sed 's/[^0-9!X]*//g')
 STREAM_COMA=`echo "$STREAM" | sed 's/\(.\)/\1,/g'`
 CUENTA=$(echo "$STREAM" | awk '{ print length; }')
 # Como los PIN's son de 8 numeros, dividimos todo el string entre 8 para saber cuantos pines hay, de esta manera
